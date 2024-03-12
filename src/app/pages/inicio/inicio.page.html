@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="micolor">COMPONENTES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let c of componentes"
+              [routerLink]="c.redirectTo"
+              >
+      <ion-icon slot="start" [name]="c.icon" color="primary"></ion-icon>
+      {{c.name}}
+    
+    </ion-item>
+  </ion-list>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  <ion-button routerLink="/alert">
+    IR A ALERT
+  </ion-button>
+  <ion-button routerLink="/action-sheet">
+    IR A ACTION-SHEET
+  </ion-button>
+  -->
+</ion-content>
